@@ -231,7 +231,7 @@ func (m *Manager) Apply(pid int) error {
 
 	// Assume DefaultDependencies= will always work (the check for it was previously broken.)
 	properties = append(properties,
-		newProp("DefaultDependencies", false))
+		newProp("DefaultDependencies", true))
 
 	if c.Resources.Memory != 0 {
 		properties = append(properties,
